@@ -15,7 +15,34 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: #efedd6;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+.box {
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 20rem;
+  margin: 1rem;
+  border-radius: 10px;
+  transform: translateX(200%);
+  translate: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
